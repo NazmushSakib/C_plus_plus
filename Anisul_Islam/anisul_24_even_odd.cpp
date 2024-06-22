@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-#include <conio.h>
+
 using namespace std;
 //Even-odd Function
 
@@ -28,5 +28,5 @@ int main()
     string checkingValue = evenOdd(num);
     cout << "The number you've entered is : "<<checkingValue;
 
-    getch();
+    return 0;
 }

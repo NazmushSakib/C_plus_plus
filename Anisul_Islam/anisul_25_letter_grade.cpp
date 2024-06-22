@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-#include <conio.h>
+
 using namespace std;
 
 //function
@@ -60,5 +60,5 @@ int main ()
     string result = grade(mark);
     cout <<"Your grade letter is : "<<result;
 
-    getch();
+    return 0;
 }

@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-#include <conio.h>
+
 using namespace std;
 int main ()
 {
@@ -17,5 +17,5 @@ int main ()
 
 
 
-    getch();
+    return 0;
 }

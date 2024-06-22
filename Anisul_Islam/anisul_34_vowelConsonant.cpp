@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-#include <conio.h>
+
 using namespace std;
 
 string letterCheck(char letter)
@@ -29,10 +29,10 @@ string letterCheck(char letter)
 int main()
 {
     cout <<"\n\n---------This program is used to find vowel or consonant-------\n\n";
-    int ch;
+    char ch;
     cout << "Enter a letter : ";
     cin >>ch;
-    cout <<"The letter you've entered is "<<letterCheck(ch);
+    cout <<"The letter you've entered is "<<letterCheck(ch)<<endl;
      
-    getch();
+    return 0;
 }

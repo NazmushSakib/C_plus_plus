@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-#include <conio.h>
+
 using namespace std;
 
 //leap year function
@@ -22,5 +22,5 @@ int main()
     cout <<"The year you've entered is "<< findLeapYear(year);
 
 
-    getch();
+ return 0;
 }

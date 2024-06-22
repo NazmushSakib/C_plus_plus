@@ -27,7 +27,7 @@ int main()
     while (k<=10);
     
 
-    cout<<"End of Do While loop"<<endl;
+    cout<<"End of Do-While loop"<<endl;
 
     return 0;
 }

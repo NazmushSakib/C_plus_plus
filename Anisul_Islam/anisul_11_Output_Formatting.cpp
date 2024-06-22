@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-#include <conio.h>
+
 using namespace std;
 
 int main()
@@ -26,5 +26,5 @@ int main()
     cout <<setw(50)<< "Division of two number is = "<<div<<endl;
     //cout << "Modulus of two number is = "<<num1%num2<<endl; //float টাইপ ডাটার ক্ষেত্রে % হয় না
 
-    getch ();
+    return 0;
 }
