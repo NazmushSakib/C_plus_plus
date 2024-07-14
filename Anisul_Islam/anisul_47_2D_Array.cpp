@@ -24,6 +24,7 @@ int main()
     }
     cout<<endl;
 
+    //Printing the the values
     cout<<"Printing the value of matrix : "<<endl;
 
     for(int i=0;i<row;i++)

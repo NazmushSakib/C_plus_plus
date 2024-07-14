@@ -8,9 +8,9 @@ int main()
     cout<<"Enter the value of column : ";
     cin>>col;
 
-    int a[row][col], b[row][col], c[row][col];
+    int a[row][col], b[row][col], c[row][col];    
+    
     //matrix input
-
     cout<<"Enter the value of A matrix -> "<<endl;
     for(int i=0;i<row;i++)
     {

@@ -10,6 +10,7 @@ int main()
 
     for(int row=n;row>=1;row--)
     {
+        //space printing
         for(int col=1;col<=n-row;col++)
         {
             cout<<" ";
