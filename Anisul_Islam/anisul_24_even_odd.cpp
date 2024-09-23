@@ -18,15 +18,32 @@ using namespace std;
 
     }
 
+    void EvenOdd(int num)
+    {
+        if(num%2 == 0)
+        {
+            cout<<"The number you've entered is : EVEN"<<endl;
+        }
+        
+        if(num%2 != 0)
+        {
+            cout<<"The number you've entered is : ODD"<<endl;
+        }
+
+    }
+
 
 int main()
 {
-    int num;
+    int n;
     cout << "This program is to find even or odd number\n\n"<<endl;
     cout << "Enter an integer number : ";
-    cin >>num;
-    string checkingValue = evenOdd(num);
-    cout << "The number you've entered is : "<<checkingValue;
+    cin >>n;
+    string checkingValue = evenOdd(n);
+    cout << "The number you've entered is : "<<checkingValue<<endl;
+
+    EvenOdd(n);
+
 
     return 0;
 }

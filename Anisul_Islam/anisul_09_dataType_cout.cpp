@@ -4,9 +4,10 @@ using namespace std;
 
 int main ()
 {
+    int x = 10;     // size = 4 byte 
     double nm1 = 45.586852;
-    long double nm2= 546543.1567463;
-    char ch = 'S'; 
+    long double nm2= 546543.1567463;  // size = 16 byte 
+    char ch = 'S';   //size = 1 byte
     float nm3 = 0.546464646646;
     char name[17] = "Md. Namush Sakib";
     string address = "Mirbag, Dhaka.";

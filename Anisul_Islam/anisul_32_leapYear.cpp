@@ -8,7 +8,7 @@ using namespace std;
     {
         string ans;
         
-        (year%4==0 && year !=100) || year%400 ==0 ? ans = "a leap year" : ans = "not a leap year";
+        (year%4==0 && year%100 !=0 ) || year%400 ==0 ? ans = "a leap year" : ans = "not a leap year";
 
         return ans;
     }
@@ -19,7 +19,7 @@ int main()
     string checkYear;
     cout<<"Enter a year : ";    
     cin >>year;
-    cout <<"The year you've entered is "<< findLeapYear(year);
+    cout <<"The year you've entered is "<< findLeapYear(year)<<endl;
 
 
  return 0;
