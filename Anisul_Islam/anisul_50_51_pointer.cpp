@@ -1,82 +1,83 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void swapping(int *p1, int *p2)
-{
-    int temp;
-    temp = *p1;
-    *p1 = *p2;
-    *p2 = temp;
-} //যেহেতু এখানে মেমোরী অ্যাড্রেস চেঞ্জ হয়ে যাচ্ছে, তাই ভ্যালুও অটোমেটিক্যালী চেঞ্জ হয়ে যাচ্ছে।
+void swapping(int *p1, int *p2) {
+  int temp;
+  temp = *p1;
+  *p1 = *p2;
+  *p2 = temp;
+} // যেহেতু এখানে মেমোরী অ্যাড্রেস চেঞ্জ হয়ে যাচ্ছে, তাই ভ্যালুও অটোমেটিক্যালী চেঞ্জ হয়ে
+  // যাচ্ছে।
 // ফলে কোনো কিছু return করার প্রয়োজন পড়ছে না।
 
-int main()
-{
-   
-    int x =5;
-    int *p;
+int main() {
 
-    p =&x;
+  int x = 5;
+  int *p;
 
-    cout<<x<<endl;
-    cout<<&x<<endl;
-    cout<<p<<endl;
-    cout<<*p<<endl;
+  p = &x;
 
-    int num1, num2,num3,num4;
-    int *ptr1, *ptr2;
-    cout<<"Enter two integer : ";
-    cin>>num1>>num2;
+  cout << x << endl;
+  cout << &x << endl;
+  cout << p << endl;
+  cout << *p << endl;
 
-    ptr1 = &num1;
-    ptr2 = &num2;
+  int num1, num2, num3, num4;
+  int *ptr1, *ptr2;
+  cout << "Enter two integer : ";
+  cin >> num1 >> num2;
 
-    cout<<"before value swapping ptr1 = "<<*ptr1<<" & ptr2 = "<<*ptr2<<endl;
-    //swapping values between two pointers
+  ptr1 = &num1;
+  ptr2 = &num2;
 
-    int temp = *ptr1;
-    *ptr1 = *ptr2;
-    *ptr2 = temp;
+  cout << "before value swapping ptr1 = " << *ptr1 << " & ptr2 = " << *ptr2
+       << endl;
+  // swapping values between two pointers
 
-    cout<<"After value swapping num1 = "<<*ptr1<<" & num2 = "<<*ptr2<<endl;
+  int temp = *ptr1;
+  *ptr1 = *ptr2;
+  *ptr2 = temp;
 
-     cout<<"Enter two integer : ";
-    cin>>num3>>num4;
+  cout << "After value swapping num1 = " << *ptr1 << " & num2 = " << *ptr2
+       << endl;
 
-    ptr1 = &num3;
-    ptr2 = &num4;
+  cout << "Enter two integer : ";
+  cin >> num3 >> num4;
 
-    //again swapping using functon
-    swapping(&num3,&num4);  //ptr1 & ptr2 holds the memory addresses of num1 and num2 respectively
+  ptr1 = &num3;
+  ptr2 = &num4;
 
-    cout<<"Swapping using funcion : num1= "<<num3<<" & num2 = "<<num4<<endl;
+  // again swapping using functon
+  swapping(&num3, &num4); // ptr1 & ptr2 holds the memory addresses of num1 and
+                          // num2 respectively
 
-    //sum of two pointers
-    int sum = *ptr1 + *ptr2;
+  cout << "Swapping using funcion : num1= " << num3 << " & num2 = " << num4
+       << endl;
 
-    cout<<"The sum of two pointer is :"<<sum<<endl<<endl;
+  // sum of two pointers
+  int sum = *ptr1 + *ptr2;
 
-    //access array element using Pointer
-    int size ;
-    cout<<"Enter the size of array : ";
-    cin>>size;
-    int arr[size];
-    int *ptr;
-    ptr = &arr[0];
+  cout << "The sum of two pointer is :" << sum << endl << endl;
 
-    for(int i=0;i<size;i++)
-    {
-        cout<<"Enter the value of arr["<<i<<"] = ";
-        cin>>arr[i];
-    }
-    cout<<"Entered array value : "<<endl;
+  // access array element using Pointer
+  int size;
+  cout << "Enter the size of array : ";
+  cin >> size;
+  int arr[size];
+  int *ptr;
+  ptr = &arr[0];
 
-    for(int i=0;i<size;i++)
-    {
-        cout<<"The value of arr["<<i<<"] = "<<*ptr<<endl;
-        ptr++;
-    }
+  for (int i = 0; i < size; i++) {
+    cout << "Enter the value of arr[" << i << "] = ";
+    cin >> arr[i];
+  }
+  cout << "Entered array value : " << endl;
 
-    cout<<endl<<endl;
-    return 0;
+  for (int i = 0; i < size; i++) {
+    cout << "The value of arr[" << i << "] = " << *ptr << endl;
+    ptr++;
+  }
+
+  cout << endl << endl;
+  return 0;
 }

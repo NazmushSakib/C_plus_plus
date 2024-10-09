@@ -12,9 +12,9 @@ int main ()
 x এর আগের value 5 বসেছে; এরপরে x এর মান পরিবর্তন হয়ে x++ = x+1 = 5+1 =6 হয়েছে 
 অর্থাৎ, postfix এর ক্ষেত্রে x এর মান আগে y এর মধ্যে assign হয়, এরপরে হ্রাস/বৃদ্ধি পায় 
 */
-    cout<<"y=x++ = "<<y<<" and x = "<<x<<endl;
+    cout<<"y=x++ = "<<y<<" and x = "<<x<<" and now y = "<<y<<endl;
     int z= x--;
-    cout<<"z=x-- ="<<z<<" and x = "<<x<<endl;
+    cout<<"z=x-- ="<<z<<" and x = "<<x<<" and now z = "<<z<<endl;
     
     int i = 9;
     int j = ++i;
