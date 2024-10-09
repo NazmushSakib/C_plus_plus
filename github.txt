@@ -1,0 +1,11 @@
+github mail : sakib.dev01@gmail.com
+github user name : NazmushSakib
+github pass : S@k1b.github
+
+github token name : my token
+github token  : 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
+token validity : Expires on Wed, Jan 8 2025.
+
+run the command which  in terminal mentioned below to enable the git push.
+
+git remote set-url origin https://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@github.com/NazmushSakib/C_plus_plus
