@@ -1,6 +1,6 @@
-github mail : sakib.dev01@gmail.com
+
 github user name : NazmushSakib
-github pass : S@k1b.github
+
 
 github token name : my token
 github token  : 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
